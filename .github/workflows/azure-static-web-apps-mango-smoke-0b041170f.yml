@@ -35,7 +35,7 @@ jobs:
             #npm install --leagcy-peer-deps
             #npm run build
           #skip_app_build: true
-          CUSTOM_BUILD_COMMAND: npm install --legacy-peer-deps && npm audit fix --legacy-peer-dep && npm run build
+          #CUSTOM_BUILD_COMMAND: npm install --legacy-peer-deps && npm audit fix --legacy-peer-dep && npm run build
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
