@@ -30,9 +30,11 @@ jobs:
           app_location: "angular-app" # App source code path
           api_location: "api-starter" # Api source code path - optional
           output_location: "dist/angular-app" # Built app content directory - optional
-          app_build_command: | 
+          app_build_command: |
+            npm cache clean -force
             npm install --leagcy-peer-deps
-          skip_app_build: true
+            npm run build
+          #skip_app_build: true
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
